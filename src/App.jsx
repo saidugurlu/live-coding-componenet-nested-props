@@ -1,26 +1,23 @@
-import "./App.scss";
-import employees from "./data/employees.json";
-import { Header } from "./componenets/Header";
-import { Footer } from "./componenets/Footer";
+import './App.scss';
+import employees from './data/employees.json';
+import { Header } from './components/Header';
+import { Footer } from './components/Footer';
+import { Employee } from './components/Employee';
 
-const status = "internalUser";
+const status = 'externalUser';
 
 function App() {
-  return (
-    <div className="App">
-      <Header status={status} />
-      <ul>
-        {employees.map((emp, index) => {
-          return (
-            <li key={index}>
-              {emp.firstName} {emp.lastName}
-            </li>
-          );
-        })}
-      </ul>
-      <Footer STATUS={status} />
-    </div>
-  );
+	return (
+		<div className="App">
+			<Header status={status}/>
+			<ul>
+				{employees.map((emp, index) => {
+					return <Employee key={index} emp={emp} index={index} />;
+				})}
+			</ul>
+			<Footer status={status}/>
+		</div>
+	);
 }
 
 export default App;
