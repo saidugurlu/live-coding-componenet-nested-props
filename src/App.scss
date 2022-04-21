@@ -1,8 +1,11 @@
 body {
-	background-color: #333;
-	padding: 20px;
+  background-color: #333;
+  padding: 20px;
 
-	.App {
-		color: #ccc;
-	}
+  .App {
+    color: #ccc;
+    li {
+      padding: 10px;
+    }
+  }
 }

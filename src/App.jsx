@@ -3,16 +3,16 @@ import employees from "./data/employees.json";
 import { Header } from "./componenets/Header";
 import { Footer } from "./componenets/Footer";
 
-const userIsExternal = false;
+const status = "internalUser";
 
 function App() {
   return (
     <div className="App">
-      <Header  userIsExternal={userIsExternal}/>
+      <Header status={status} />
       <ul>
         {employees.map((emp, index) => {
           return (
-            <li>
+            <li key={index}>
               {emp.firstName} {emp.lastName}
             </li>
           );
