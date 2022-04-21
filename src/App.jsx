@@ -18,7 +18,7 @@ function App() {
           );
         })}
       </ul>
-      <Footer />
+      <Footer STATUS={status} />
     </div>
   );
 }
