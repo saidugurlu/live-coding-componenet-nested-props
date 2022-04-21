@@ -10,11 +10,11 @@ function App() {
 	return (
 		<div className="App">
 			<Header status={status}/>
-			<ul>
+			<div className="employees">
 				{employees.map((emp, index) => {
-					return <Employee key={index} emp={emp} index={index} />;
+					return <Employee key={index} emp={emp} status={status}/>;
 				})}
-			</ul>
+			</div>
 			<Footer status={status}/>
 		</div>
 	);

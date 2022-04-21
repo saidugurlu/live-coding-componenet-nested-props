@@ -1,11 +1,22 @@
 body {
-  background-color: #333;
-  padding: 20px;
+	background-color: #333;
+	padding: 20px;
 
-  .App {
-    color: #ccc;
-    li {
-      padding: 10px;
-    }
-  }
+	.App {
+		color: #ccc;
+
+		.employee {
+			background-color: #222;
+			padding: 10px;
+			margin: 10px 0 10px 0;
+			.title {
+				color: rgb(177, 177, 100);
+			}
+			.notes {
+				font-size: 0.8rem;
+				color: #777;
+				font-style: italic;
+			}
+		}
+	}
 }
